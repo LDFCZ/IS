@@ -148,14 +148,14 @@ def encrypt(path_to_image, text, balance):
 
         count += 1
 
-    img["image"].save("out.png", "PNG")
+    img["image"].save("out.jpg")
 
     file = open("key.dat", "w")
     file.write(str(balance) + '$' + str(count))
     file.close()
 
     success(str(count) + " pixels takes")
-    success("Image saved in out.png")
+    success("Image saved in out.jpg")
     success("Key saved in key.dat")
 
 
